@@ -11,6 +11,6 @@
     }
 </style>
 
-<div class="selection">
+<div class="selection" title={getSelectionLabel(item)}>
     {@html getSelectionLabel(item)}
 </div>
