@@ -537,6 +537,10 @@
         if (input) input.focus();
     }
 
+    function handleChangeInput(newValue) {
+        dispatch('change', newValue);
+    }
+
     function handleWindowEvent(event) {
         if (!container) return;
         const eventTarget =
@@ -904,6 +908,7 @@
         {..._inputAttributes}
         bind:this={input}
         on:focus={handleFocus}
+        on:change={handleChangeInput(filterText)}
         bind:value={filterText}
         placeholder={placeholderText}
         style={inputStyles}
