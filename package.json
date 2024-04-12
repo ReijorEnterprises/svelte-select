@@ -1,8 +1,8 @@
 {
-  "name": "svelte-select",
-  "version": "4.4.7",
-  "repository": "https://rob-balfre@github.com/rob-balfre/svelte-select.git",
-  "description": "A <Select> component for Svelte apps",
+  "name": "@reijor/svelte-select",
+  "version": "4.5.0",
+  "repository": "https://github.com/ReijorEnterprises/svelte-select.git",
+  "description": "A <Select> component for Svelte apps (modified for use by Reijor Enterprises)",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -38,6 +38,9 @@
     "tape-modern": "^1.1.1"
   },
   "author": "rob-balfre",
+  "contributors" : [
+    "Jeff Wilhite <jeff@wilhite.software>"
+  ],
   "license": "LIL",
   "keywords": [
     "svelte"

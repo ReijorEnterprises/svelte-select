@@ -1,5 +1,10 @@
 # svelte-select changelog
 
+# 4.5.0
+
+Forked by Reijor Enterprises
+Name changed to @reijor/svelte-select
+
 # 4.4.7
 
 Temp fix for SvelteKit and scrollbar issues - thanks to @sethvincent
