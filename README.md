@@ -79,6 +79,7 @@ yarn add svelte-select
 - `placeholderAlwaysShow: Boolean` Default: `false`. When `isMulti` then placeholder text will always still show.
 - `isWaiting: Boolean` Default: `false`. If true then loader shows. `loadOptions` will automatically set this as true until promise resolves.
 - `listOffset: Number` Default: `5`. Controls the spacing offset between the list and the input.
+- `listWidth: Number` Default: `0`. If non-zero, specifies the width (in pixels) of the selection list.
 
 ### Items
 

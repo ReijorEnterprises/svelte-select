@@ -4,6 +4,7 @@
 
 Forked by Reijor Enterprises
 Name changed to @reijor/svelte-select
+Added listWidth property for manually setting the width of the selection list 
 
 # 4.4.7
 

@@ -31,6 +31,7 @@
     export let listPlacement = null;
     export let listAutoWidth = null;
     export let listOffset = 5;
+    export let listWidth = 0;
 
     let isScrollingTimer = 0;
     let isScrolling = false;
@@ -215,11 +216,11 @@
     let listStyle;
     function computePlacement() {
         const { height, width } = parent.getBoundingClientRect();
-
+        let listWidthStyle = listAutoWidth ? 'auto' : '100%'
+        if (listWidth > 0)
+            listWidthStyle = listWidth + "px"
         listStyle = '';
-        listStyle += `min-width:${width}px;width:${
-            listAutoWidth ? 'auto' : '100%'
-        };`;
+        listStyle += `min-width:${width}px;width:${listWidthStyle};`;
 
         if (
             listPlacement === 'top' ||
