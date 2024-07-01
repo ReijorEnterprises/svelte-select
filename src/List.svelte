@@ -292,6 +292,7 @@
             let:item
             let:i>
             <div
+                role="button"
                 on:mouseover={() => handleHover(i)}
                 on:focus={() => handleHover(i)}
                 on:click={(event) => handleClick({ item, i, event })}
@@ -313,6 +314,7 @@
                 <div class="listGroupTitle">{getGroupHeaderLabel(item)}</div>
             {:else}
                 <div
+                    role="button"
                     on:mouseover={() => handleHover(i)}
                     on:focus={() => handleHover(i)}
                     on:click={(event) => handleClick({ item, i, event })}

@@ -76,6 +76,7 @@
 
 {#each value as item, i}
     <div
+        role="button"
         class="multiSelectItem {activeValue === i ? 'active' : ''} {isDisabled
             ? 'disabled'
             : ''}"
@@ -86,6 +87,7 @@
         </div>
         {#if !isDisabled && !multiFullItemClearable}
             <div
+                role="button"
                 class="multiSelectItem_clear"
                 on:click={(event) => handleClear(i, event)}>
                 <svg

@@ -866,6 +866,7 @@
     on:keydown={handleKeyDown} />
 
 <div
+    role="button"
     class="selectContainer {containerClasses}"
     class:hasError
     class:multiSelect={isMulti}
